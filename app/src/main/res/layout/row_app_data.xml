@@ -3,6 +3,7 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:orientation="vertical"
+    android:background="?android:attr/selectableItemBackground"
     android:minWidth="@dimen/app_row_width"
     android:minHeight="@dimen/app_row_height"
     android:padding="@dimen/row_common_padding">

@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Pocket Launcher</string>
-    <!-- TODO: Remove or change this placeholder text -->
+    <string name="app_info">App Info</string>
+   <string name="uninstall">Uninstall</string>
 </resources>
