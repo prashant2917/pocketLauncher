@@ -17,8 +17,6 @@ class AppDataAdapter(private var appDataList: List<AppData>) :
     override fun onBindViewHolder(holder: AppDataViewHolder, position: Int) {
         with(holder) {
             this.binding.tvAppName.text = appDataList[position].appName
-            this.binding.tvPackageName.text = appDataList[position].packageName
-
             appDataList[position].appIcon.let {
                 this.binding.ivAppIcon.setImageDrawable(it)
             }
