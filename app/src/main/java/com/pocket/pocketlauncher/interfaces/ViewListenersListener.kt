@@ -11,7 +11,6 @@ interface ClickListener {
 }
 
 interface MenuItemClickListener {
-    fun onMenuItemUninstallClick(position: Int)
     fun onMenuItemAppInfoClick(position: Int)
 }
 
@@ -23,10 +22,6 @@ class PopUpMenuItemClickListener(
         return when (item?.itemId) {
             R.id.menu_app_info -> {
                 menuItemClickListener.onMenuItemAppInfoClick(position)
-                true
-            }
-            R.id.menu_uninstall -> {
-                menuItemClickListener.onMenuItemUninstallClick(position)
                 true
             }
             else -> {

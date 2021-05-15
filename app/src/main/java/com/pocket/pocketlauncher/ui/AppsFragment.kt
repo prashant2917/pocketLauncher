@@ -87,9 +87,6 @@ class AppsFragment : Fragment() {
 
 
     private val menuItemClickListener = object : MenuItemClickListener {
-        override fun onMenuItemUninstallClick(position: Int) {
-            val appData = appList[position]
-        }
 
         override fun onMenuItemAppInfoClick(position: Int) {
             val appData = appList[position]
@@ -99,10 +96,10 @@ class AppsFragment : Fragment() {
 
     }
 
-
     override fun onDestroy() {
         super.onDestroy()
         _binding = null
     }
+
 
 }
